@@ -18,8 +18,6 @@
 , ...
 }@args:
 
-assert builtins.pathExists specFile;
-assert builtins.pathExists lockFile;
 let
   specFile' = yamlLib.readYAML specFile;
   lockFile' = yamlLib.readYAML lockFile;
